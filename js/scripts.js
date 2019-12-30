@@ -73,3 +73,8 @@
 		}
 		
 	})
+
+
+	$('.reset-filter').click(function() {
+		$('body').attr('class', "")
+	})
