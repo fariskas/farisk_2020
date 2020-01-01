@@ -11,7 +11,14 @@
    font-family: 'WI';
    font-style: normal;
    font-weight: 300;
-   src: url(fonts/WhyteInktrap-Light.woff.woff) format('woff');
+   src: url(fonts/WhyteInktrap-Light.woff) format('woff');
+}
+
+@font-face {
+   font-family: 'W';
+   font-style: normal;
+   font-weight: 300;
+   src: url(fonts/Whyte-Book.woff) format('woff');
 }
 
 
@@ -20,13 +27,12 @@
 }
 
 body {
-	font-family: 'WI';
+	font-family: 'W';
 	font-size: 12px;
 	font-weight: 350;
 	background-color: #E5E5E5;
 	overflow: hidden;
-	/*font-feature-settings: 'ordn' on, 'ss01' on, 'kern' off;*/
-
+	font-feature-settings: 'ordn' on, 'ss01' on, 'kern' off;
 }
 a {
 	text-decoration: none;
@@ -119,7 +125,7 @@ ul, li {
 	height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);
 	border-top: 1px solid #888888;
 	border-bottom: 1px solid #888888;
-	padding: 10px;
+	padding: 9px 0 0 10px;
 }
 .section-right {
 
@@ -171,7 +177,7 @@ ul, li {
 .footer {
 	text-transform: uppercase;
 	position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     left: 10px;
     display: flex;
     flex-direction: column;
@@ -179,6 +185,20 @@ ul, li {
 }
 .footer > a, .footer > span {
 	cursor: pointer;
+}
+
+.about-text {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: #e5e5e5;
+    display: none;
+}
+.show-about .about-text {
+	display: block;
+	line-height: 1.5;
 }
 
 .grid {
@@ -214,22 +234,22 @@ ul, li {
 	max-width: 9px;
 	max-height: 9px;
 	position: absolute;
-    top: -5px;
+    top: -6px;
     left: -5px;
 }
 .grid .work-title {
 	text-transform: uppercase;
 	display: block;
-	margin:10px 0 0 10px;
+	margin: 9px 0 0 10px;
 }
 .grid .work-graph {
     display: flex;
     flex-wrap: wrap;
-    padding: 2px 20px 10px;
+    padding: 6px 20px 10px;
 }
 .work-graph .cat_dot {
 	width: 33.3333%;
-	min-height: 41px;
+	min-height: 42px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -248,7 +268,31 @@ ul, li {
 }
 .cat_dot .cat_title {
 	display: block;
-	margin-top: 3px;
-	margin-left: 12px;
+	margin-top: 1px;
+	margin-left: 11px;
 	height: 8px;
+}
+
+
+/*** SIMPLEBAR CUSTOM SCROLLBAR ***/
+
+.simplebar-wrapper {
+/*	max-height: calc(100% - (var(--site-gap) * 0 ) + 1px  );
+	height: calc(100% - (var(--site-gap) * 0 ) + 1px  );
+	padding-top:calc(var(--site-gap) - 1px);
+	padding-bottom: var(--site-gap);*/
+}
+.simplebar-track.simplebar-vertical {
+	top: calc(var(--site-gap) - 1px);	
+	bottom: var(--site-gap);
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	:root {
+	  --site-gap: 20px;
+	  --grids-per-row: 3;
+	}
+
 }

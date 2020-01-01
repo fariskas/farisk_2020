@@ -77,4 +77,15 @@
 
 	$('.reset-filter').click(function() {
 		$('body').attr('class', "")
+		$('.reset-filter, .filter-divider').removeClass('show')
+	})
+
+
+	$('.about-a').click(function() {
+		if ( !$('body').hasClass('show-about') ) {
+			$('.about-a').html('BACK TO FILTERS');
+		} else {
+			$('.about-a').html('ABOUT');
+		}
+		$('body').toggleClass('show-about')	
 	})
