@@ -50,7 +50,7 @@
 				')
 			}
 		} else {
-			$('.grid-'+i).addClass('empty-grid')
+			$('.grid-'+i).addClass('empty-grid empty-grid-'+i)
 		}
 	}
 
@@ -88,4 +88,14 @@
 			$('.about-a').html('ABOUT');
 		}
 		$('body').toggleClass('show-about')	
+	})
+
+
+	$('.toggle-menu').click(function() {
+		$('body').toggleClass('show-menu');
+		if ( !$('body').hasClass('show-menu') ) {
+			$('.toggle-menu').html('MENU & FILTERS');
+		} else {
+			$('.toggle-menu').html('CLOSE MENU & FILTERS');
+		}
 	})

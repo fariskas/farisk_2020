@@ -138,6 +138,12 @@ ul, li {
 .logo {
 	cursor: pointer;
 }
+.toggle-menu {
+	display: none;
+	position: fixed;
+	top: 19px;
+	right: 20px;
+}
 .filter {
 	text-transform: uppercase;
 	margin-top: 30px;
@@ -164,6 +170,7 @@ ul, li {
 	width: 100%;
 	line-height: 1.5;
 	cursor: pointer;
+	display: flex;
 }
 .filtered .filter li {
 	opacity: 0.3;
@@ -171,7 +178,9 @@ ul, li {
 .filter ul .code {
     min-width: 40px;
     float: left;
-    
+}
+.filter li .cat {
+	padding-right: 10px;
 }
 
 .footer {
@@ -206,9 +215,16 @@ ul, li {
 	width:var(--grid-width);
 	border-left:1px solid #888888;
 	border-top: 1px solid #888888;
-	max-height: 168px;
-	min-height: 168px;
+	max-height: 165px;
+	min-height: 165px;
 	background-color: #E5E5E5;
+	transition: 0.2s background-color ease-in-out;
+}
+.grid:not(.empty-grid) {
+	cursor: pointer;
+}
+.grid:not(.empty-grid):hover {
+	background-color: #b1b1b1;
 }
 .grid:first-child:before {
     content: "";
@@ -241,6 +257,7 @@ ul, li {
 	text-transform: uppercase;
 	display: block;
 	margin: 9px 0 0 10px;
+	padding-right: 10px;
 }
 .grid .work-graph {
     display: flex;
@@ -295,4 +312,73 @@ ul, li {
 	  --grids-per-row: 3;
 	}
 
+}
+
+@media only screen and (max-width:768px) {
+	:root {
+		--grids-per-row: 2;
+	}
+	.empty-grid {
+		display: none;
+	}
+	.grid .work-graph {
+		padding: 6px 10px 10px;
+	}
+
+}
+@media only screen and (max-width:570px) {
+	:root {
+		--site-gap: 10px;
+		--grids-per-row: 1;
+	}
+	.section-left {
+
+		width: calc(var(--grid-width) * 2);
+		z-index: 2;
+		background-color: rgba(229, 229, 229, 0.9);
+		max-height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);
+		height: 50px;
+		/*height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);*/
+		transition: 0.3s height ease-in-out;	
+		overflow:hidden;
+	}
+	.show-menu .section-left {
+		height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);
+	}
+	.show-menu .footer {
+		display: flex;
+		pointer-events: auto;
+		opacity: 1;
+	}
+	.section-left:before {
+		content: "";
+		position: fixed;
+		top:0;
+		left: 9px;
+		width: 1px;
+		height: 100%;
+		background-color: #888888;
+	}
+	.section-left:after {
+		content: "";
+		position: fixed;
+		top:0;
+		right: 9px;
+		width: 1px;
+		height: 100%;
+		background-color: #888888;
+	}
+	.footer {
+		pointer-events: none;
+		opacity: 0;
+		transition: 0.3s opacity ease-in-out;
+	}
+	.section-right {
+		width: calc(var(--grid-width) * 2);
+		margin-top:49px;
+		margin-left:-1px;
+	}
+	.toggle-menu {
+		display: block;
+	}
 }
