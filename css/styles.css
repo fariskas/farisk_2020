@@ -134,6 +134,7 @@ ul, li {
 	width: calc( var(--wrapper-width) - var(--grid-width) );
 	align-content: flex-start;
 	margin-left: auto;
+	background-color: #e5e5e5;
 }
 .logo {
 	cursor: pointer;
@@ -143,6 +144,7 @@ ul, li {
 	position: fixed;
 	top: 19px;
 	right: 20px;
+	cursor: pointer;
 }
 .filter {
 	text-transform: uppercase;
@@ -195,7 +197,12 @@ ul, li {
 .footer > a, .footer > span {
 	cursor: pointer;
 }
-
+.about-a {
+	cursor: help !important;
+}
+.show-about .about-a {
+	cursor: nw-resize !important;
+}
 .about-text {
     position: absolute;
     left: 10px;
@@ -204,10 +211,11 @@ ul, li {
     padding-bottom: 10px;
     background-color: #e5e5e5;
     display: none;
+    line-height: 1.5;
 }
 .show-about .about-text {
 	display: block;
-	line-height: 1.5;
+	
 }
 
 .grid {
@@ -305,13 +313,50 @@ ul, li {
 }
 
 
+/*** OVERLAY ***/
 
-@media only screen and (max-width: 1024px) {
+.overlay-container {
+	position: fixed;
+	/*background-color: rgb(0,0,0,0.5);*/
+	top: var(--site-gap);
+	right: var(--site-gap);
+	height: calc(100% - var(--site-gap) - var(--site-gap));
+	width: calc( var(--wrapper-width) - var(--grid-width) );
+	/*pointer-events: none;*/
+	display: none;
+	cursor: nw-resize;
+}
+.overlay {
+    position: absolute;
+    width: calc(var(--grid-width) * 2 + 2px);
+    /*height: calc(165px * 2);*/
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    z-index: 9;
+    opacity: 0.98;
+    pointer-events: auto;
+    /*cursor: pointer;*/
+    transform: translate(-50%,-50%);
+}
+.overlay video {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+
+@media only screen and (max-width: 1080px) {
 	:root {
 	  --site-gap: 20px;
 	  --grids-per-row: 3;
 	}
-
+	.empty-grid-4,
+	.empty-grid-6,
+	.empty-grid-12,
+	.empty-grid-17,
+	.empty-grid-18 {
+			display: none;
+		}
 }
 
 @media only screen and (max-width:768px) {
@@ -330,6 +375,9 @@ ul, li {
 	:root {
 		--site-gap: 10px;
 		--grids-per-row: 1;
+	}
+	.wrapper {
+		max-height: calc(100% - (var(--site-gap) * 0 ) + 4px  );
 	}
 	.section-left {
 
@@ -350,6 +398,13 @@ ul, li {
 		pointer-events: auto;
 		opacity: 1;
 	}
+	.show-about .about-text {
+		display: none;
+	}
+	.show-about.show-menu .about-text {
+		display: block;
+	}
+
 	.section-left:before {
 		content: "";
 		position: fixed;

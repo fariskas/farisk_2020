@@ -20,6 +20,7 @@
 
 
 
+
 	for (var i = 0; i < data_work.length; i++) {
 		$('.section-right').append('\
 			<div class="grid grid-'+i+'">\
@@ -35,6 +36,9 @@
 				<ul class="work-graph">\
 				</ul>\
 			');
+
+			$('.grid-'+i).addClass('grid-with-work')
+			$('.grid-'+i).attr('data-index', i)
 
 			for (var z = 0; z < data_work[i].cat.length; z++) {
 				$('.grid-'+i+' .work-graph').addClass('has-cat_'+data_work[i].cat[z])
@@ -98,4 +102,22 @@
 		} else {
 			$('.toggle-menu').html('CLOSE MENU & FILTERS');
 		}
+	})
+
+
+	$('.grid-with-work').click(function() {
+		var work_index = $(this).attr('data-index')
+		$('.overlay-container').append('\
+			<div class="overlay">\
+				<video src="assets/works/'+data_work[work_index].path+'/0.mp4" autoplay loop playsinline>\
+			</div>\
+		');
+
+		$('.overlay-container').fadeIn('fast');
+	})
+
+	$('.overlay-container').click(function() {
+		$('.overlay-container').fadeOut('fast', function() {
+			$('.overlay-container').empty();
+		});
 	})
