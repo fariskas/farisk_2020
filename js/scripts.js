@@ -109,6 +109,7 @@
 		var work_index = $(this).attr('data-index')
 		$('.overlay-container').append('\
 			<div class="overlay">\
+				<img class="loading" src="assets/icn/loading.svg">\
 				<video src="assets/works/'+data_work[work_index].path+'/0.mp4" autoplay loop playsinline>\
 			</div>\
 		');

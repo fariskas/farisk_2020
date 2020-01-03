@@ -343,6 +343,24 @@ ul, li {
 	width: 100%;
 	vertical-align: bottom;
 }
+img.loading {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    animation: 1s load-spin linear infinite;
+}
+@keyframes load-spin {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(359deg);
+	}
+}
 
 
 @media only screen and (min-height: 900px) {
