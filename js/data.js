@@ -55,8 +55,8 @@ var data_work = [
 				},	
 				{
 					"title" 		: "OKOK Services",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "OKOK Services is an independent creative studio based between Amsterdam and Seoul, creating exploratory visual digital experiences.",
+					"url" 			: "http://okok.services/",
 					"cat"			: ["w", "pf", "d", "dv"],
 					"path"			: "amt",
 					"media"			: ["0.mp4"]
@@ -69,7 +69,7 @@ var data_work = [
 				},	
 				{
 					"title" 		: "Mun Jiwoo",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
+					"description"	: "Mun Jiwoo is a South Korean photographer who bases her work off bla bla bla lorem ipsum dolor sit amet.",
 					"url" 			: "http://aminorthread.com/",
 					"cat"			: ["w", "pf", "d", "dv"],
 					"path"			: "amt",
@@ -80,18 +80,18 @@ var data_work = [
 				},	
 				{
 					"title" 		: "The Mindful Company",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "The Mindful Company is a website for individuals to join on a journey to live an inspired and mindful life. It also features an online store to buy thoughtfully designed reminder bands.<br><br>Nominated for <a href='https://www.awwwards.com/' target='_blank'>AWWWARDS</a> 2015 ecommerce website of the year",
+					"url" 			: "https://www.mindful-company.com/",
 					"cat"			: ["w", "ec", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "tmc",
 					"media"			: ["0.mp4"]
 				},
 				{
 					"title" 		: "Demo Festival 2019",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "Demo Festival celebrates the finest motion from the finest studios and designers from all around the world.<br><br>I was fortunate enough to have my work selected showcased for 24 hours on 80 digital screens located in Amsterdam Central train station.<br><br><span class='note'>*Photos are composites from original photographs by Aad Hoogendoorn.</span>",
+					"url" 			: null,
 					"cat"			: ["in", "ex", "mg", "d"],
-					"path"			: "amt",
+					"path"			: "demo",
 					"media"			: ["0.mp4"]
 				},
 				{
@@ -99,18 +99,18 @@ var data_work = [
 				},	
 				{
 					"title" 		: "The Gentle Label",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "The Gentle Label makes beautifully simple and natural skincare products for the whole family and home.<br><br>Development of the online shop was done on Shopify.",
+					"url" 			: null,
 					"cat"			: ["w", "ec", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "tgl",
 					"media"			: ["0.mp4"]
 				},
 				{
-					"title" 		: "Red Bull Presents",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"title" 		: "Red Bull Music Presents",
+					"description"	: "Red Bull Music Presents is a collection of shows that celebrates diverse music scenes in cities across the globe. I was comissioned to create some exploratory motion graphic visuals with code for the 2020 edition of the program.<br><br>Visuals done in code with THREE.js and cables.gl",
+					"url" 			: null,
 					"cat"			: ["mg", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "redbull",
 					"media"			: ["0.mp4"]
 				},
 				{
@@ -118,16 +118,16 @@ var data_work = [
 				},
 				{
 					"title" 		: "Full of Luck Club",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "Full of Luck Club is a modern Cantonese kitchen in Singapore serving authentic Chinese comfort food and lots of good luck.",
+					"url" 			: null,
 					"cat"			: ["w", "d", "dv"],
 					"path"			: "folc",
 					"media"			: ["0.mp4"]
 				},
 				{
 					"title" 		: "Bless You My Dear",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "Bless You My Dear – A curation of sterling silver jewelry and an expression of wearable frankness.<br><br>Online store built on the Shopify ecommerce platform.",
+					"url" 			: "https://www.blessyoumydear.com/",
 					"cat"			: ["w", "ec", "d", "dv"],
 					"path"			: "bymd",
 					"media"			: ["0.mp4"]
@@ -137,10 +137,10 @@ var data_work = [
 				},
 				{
 					"title" 		: "The Waumap Project",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "The Waumap project archives a 10-year record of major commercial buildings near Wausan-ro, the location of Hongik University and presents this information as interactive ‘street-view’ images and motion typography.<br><br>WebGL visuals done with THREE.js<br><br>Project completed while working with Rebel9.",
+					"url" 			: "http://waumap.project9.co.kr/",
 					"cat"			: ["w", "in", "ex", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "waumap",
 					"media"			: ["0.mp4"]
 				},
 				{
@@ -150,11 +150,22 @@ var data_work = [
 					"title" 		: null,
 				},
 				{
-					"title" 		: "Summon - Temple of Echoes",
-					"description"	: "A Minor Thread is a design practice based in Singapore that works on commercial and independent projects.<br><br>The site invites visitors to create their own ‘minor threads’ by drawing on the home page with a mouse pointer or their own touch devices.<br><br>Muted pixel pigment variations of each project is sampled and used in a subtle gradient overlay as a hover effect.",
-					"url" 			: "http://aminorthread.com/",
+					"title" 		: "MMCA Korea",
+					"description"	: "MMCA - A website for the National Museum of Modern and Contemporary Art of Korea (MMCA) to showcase archive data submissions from an online survey done as part of the 50th anniversary celebrations of the art institution.<br><br>WebGL data visualization done with THREE.js and oimi.js<br><br>Project completed while working with Rebel9.",
+					"url" 			: "",
 					"cat"			: ["w", "ex", "in", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "mmca",
 					"media"			: ["0.mp4"]
+				},
+				{
+					"title" 		: "Coma Makeup",
+					"description"	: "Coma Makeup is a one-stop online beauty station for amazing quality cosmetics and beauty products at affordable prices.<br><br>Online store built on the Shopify ecommerce platform.",
+					"url" 			: null,
+					"cat"			: ["w", "ec", "d", "dv"],
+					"path"			: "coma",
+					"media"			: ["0.mp4"]
+				},
+				{
+					"title" 		: null,
 				},
 			]

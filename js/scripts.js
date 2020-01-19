@@ -106,19 +106,28 @@
 
 
 	$('.grid-with-work').click(function() {
-		var work_index = $(this).attr('data-index')
+		$(this).addClass('active');
+
+		var work_index = $(this).attr('data-index');
 		$('.overlay-container').append('\
 			<div class="overlay">\
+				<div class="overlay-bg"></div>\
 				<img class="loading" src="assets/icn/loading.svg">\
 				<video src="assets/works/'+data_work[work_index].path+'/0.mp4" autoplay loop playsinline>\
 			</div>\
 		');
 
-		$('.overlay-container').fadeIn('fast');
+		var work_desc = data_work[work_index].description+ (data_work[work_index].url ? '<br><br><a target="_blank" href="'+data_work[work_index].url+'">VIEW SITE</a>' : '')
+
+		$('.work-description').html(work_desc)
+
+		$('.overlay-container, .work-description').fadeIn('fast');
 	})
 
 	$('.overlay-container').click(function() {
 		$('.overlay-container').fadeOut('fast', function() {
 			$('.overlay-container').empty();
 		});
+		$('.work-description').fadeOut('fast');
+		$('.grid-with-work').removeClass('active')
 	})
