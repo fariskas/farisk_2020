@@ -113,7 +113,7 @@
 			<div class="overlay">\
 				<div class="overlay-bg"></div>\
 				<img class="loading" src="assets/icn/loading.svg">\
-				<video src="assets/works/'+data_work[work_index].path+'/0.mp4" autoplay loop playsinline>\
+				<video src="assets/works/'+data_work[work_index].path+'/0.mp4" controls autoplay loop playsinline>\
 			</div>\
 		');
 
