@@ -352,7 +352,7 @@ ul, li {
     /*height: calc(165px * 2);*/
     top: 50%;
     left: 50%;
-    background-color: #888888;
+    /*background-color: #888888;*/
     z-index: 9;
     opacity: 1;
     pointer-events: auto;
