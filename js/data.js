@@ -113,7 +113,7 @@ var data_work = [
 					"vimeo"			: "386014154"
 				},
 				{
-					"title" 		: "Red Bull Music Presents",
+					"title" 		: "Red Bull Music",
 					"description"	: "Red Bull Music Presents is a collection of shows that celebrates diverse music scenes in cities across the globe. I was comissioned to create some exploratory motion graphic visuals with code for the 2020 edition of the program.<br><br>Visuals done in code with THREE.js and cables.gl",
 					"url" 			: null,
 					"cat"			: ["mg", "d", "dv"],
@@ -161,6 +161,9 @@ var data_work = [
 					"title" 		: null,
 				},
 				{
+					"title" 		: null,
+				},
+				{
 					"title" 		: "MMCA Korea",
 					"description"	: "MMCA - A website for the National Museum of Modern and Contemporary Art of Korea (MMCA) to showcase archive data submissions from an online survey done as part of the 50th anniversary celebrations of the art institution.<br><br>WebGL data visualization done with THREE.js and oimi.js<br><br>Project completed while working with Rebel9.",
 					"url" 			: "",
@@ -170,6 +173,21 @@ var data_work = [
 					"vimeo"			: "386014127"
 				},
 				{
+					"title" 		: null,
+				},
+				{
+					"title" 		: "Experimentations",
+					"description"	: "Various code based visual experimentations made with WebGL, GLSL, cables.gl<br><br>View more at <a href='https://instagram.com/faris.kassim' target='_blank'>@fariskassim",
+					"url" 			: null,
+					"cat"			: ["mg", "d", "dv"],
+					"path"			: "coma",
+					"media"			: ["0.mp4"],
+					"vimeo"			: "389052202"
+				},
+				{
+					"title" 		: null,
+				},
+				{
 					"title" 		: "Coma Makeup",
 					"description"	: "Coma Makeup is a one-stop online beauty station for amazing quality cosmetics and beauty products at affordable prices.<br><br>Online store built on the Shopify ecommerce platform.",
 					"url" 			: null,
@@ -177,8 +195,5 @@ var data_work = [
 					"path"			: "coma",
 					"media"			: ["0.mp4"],
 					"vimeo"			: "386014044"
-				},
-				{
-					"title" 		: null,
 				},
 			]

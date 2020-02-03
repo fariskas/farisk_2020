@@ -123,13 +123,13 @@
 
 		$('.work-description').html(work_desc)
 
-		$('.overlay-container, .work-description').fadeIn('fast');
+		$('.overlay-container, .work-description, .close-overlay').fadeIn('fast');
 	})
 
-	$('.overlay-container').click(function() {
+	$('.overlay-container, .close-overlay').click(function() {
 		$('.overlay-container').fadeOut('fast', function() {
 			$('.overlay-container').empty();
 		});
-		$('.work-description').fadeOut('fast');
+		$('.work-description, .close-overlay').fadeOut('fast');
 		$('.grid-with-work').removeClass('active')
 	})
