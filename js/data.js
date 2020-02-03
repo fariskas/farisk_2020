@@ -148,7 +148,7 @@ var data_work = [
 				{
 					"title" 		: "The Waumap Project",
 					"description"	: "The Waumap project archives a 10-year record of major commercial buildings near Wausan-ro, the location of Hongik University and presents this information as interactive ‘street-view’ images and motion typography.<br><br>WebGL visuals done with THREE.js<br><br>Project completed while working with Rebel9.",
-					"url" 			: "http://waumap.project9.co.kr/",
+					"url" 			: "https://waumap.netlify.com/",
 					"cat"			: ["w", "in", "ex", "d", "dv"],
 					"path"			: "waumap",
 					"media"			: ["0.mp4"],
