@@ -358,6 +358,7 @@ ul, li {
 	/*pointer-events: none;*/
 	display: none;
 	cursor: nw-resize;
+	will-change: auto;
 }
 .overlay {
 	display: block;
