@@ -220,6 +220,7 @@ ul, li {
     display: none;
     line-height: 1.5;
     z-index: 2;
+    will-change: opacity;
 }
 .show-about .about-text {
 	display: block;
@@ -358,7 +359,7 @@ ul, li {
 	/*pointer-events: none;*/
 	display: none;
 	cursor: nw-resize;
-	will-change: auto;
+	will-change: opacity;
 }
 .overlay {
 	display: block;
