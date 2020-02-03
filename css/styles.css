@@ -313,7 +313,7 @@ ul, li {
 	display: block;
 	margin-top: 1px;
 	margin-left: 11px;
-	height: 8px;
+	height: 11px;
 }
 
 
@@ -406,19 +406,22 @@ img.loading {
 
 @media only screen and (min-width: 1500px) {
 	body {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.grid .work-title {
-		margin: 8px 0 0 10px;
+		margin: 8px 0 0 9px;
 	}
 	.grid .plus {
-		top:-10px;
+		top:-8px;
 	}
 	.section-left {
-		padding: 8px 0 0 10px;
+		padding: 8px 0 0 9px;
 	}
 	.about-text, .work-description {
 		top:5px;
+	}
+	.cat_dot .cat_title {
+		height: 14px;
 	}
 }
 @media only screen and (max-width: 1080px) {
