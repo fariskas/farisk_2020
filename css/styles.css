@@ -546,4 +546,7 @@ img.loading {
 	.toggle-menu {
 		display: block;
 	}
+	.close-overlay {
+		display: none;
+	}
 }
