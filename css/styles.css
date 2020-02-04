@@ -547,6 +547,6 @@ img.loading {
 		display: block;
 	}
 	.close-overlay {
-		display: none;
+		display: none !important;
 	}
 }
