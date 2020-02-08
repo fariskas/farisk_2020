@@ -136,6 +136,17 @@ ul, li {
 	margin-left: auto;
 	background-color: #e5e5e5;
 }
+.fader-left {
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    width: calc(100% - 2px);
+    height: 10px;
+    background: linear-gradient(0deg, #e5e5e5, rgba(229, 229, 229, 0.01));
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0;
+}
 .logo {
 	cursor: pointer;
 }
@@ -487,11 +498,15 @@ img.loading {
 		z-index: 2;
 		background-color: rgba(229, 229, 229, 0.9);
 		max-height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);
-		height: 90px;
+		height: 50px;
 		/*height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);*/
 		transition: 0.3s height ease-in-out;	
 		overflow:hidden;
 	}
+	.show-work .section-left {
+		height: 108px;
+	}
+	
 	.show-menu .section-left {
 		height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);
 	}
@@ -524,6 +539,9 @@ img.loading {
 		width: 1px;
 		height: 100%;
 		background-color: #888888;
+	}
+	.show-work .fader-left {
+		opacity: 1;
 	}
 	.work-description {
 	    height: 100%;

@@ -107,13 +107,20 @@
 
 	$('.grid-with-work').click(function() {
 		$(this).addClass('active');
+		$('body').addClass('show-work');
+
+		setTimeout(function(){ 
+			$('.work-description').scrollTop(0)
+		}, 100);
+
+		
 
 		var work_index = $(this).attr('data-index');
 		$('.overlay-container').append('\
 			<div class="overlay">\
 				<div class="overlay-bg"></div>\
 				<img class="loading" src="assets/icn/loading.svg">\
-				<div style="padding:62.28% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'+data_work[work_index].vimeo+'?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>\
+				<div style="padding:70.28% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'+data_work[work_index].vimeo+'?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>\
 			</div>\
 		');
 
@@ -131,5 +138,6 @@
 			$('.overlay-container').empty();
 		});
 		$('.work-description, .close-overlay').fadeOut('fast');
-		$('.grid-with-work').removeClass('active')
+		$('.grid-with-work').removeClass('active');
+		$('body').removeClass('show-work');
 	})
