@@ -27,7 +27,7 @@
 }
 
 body {
-	font-family: 'W';
+	font-family: 'W', 'Arial', sans-serif;
 	font-size: 12px;
 	font-weight: 350;
 	background-color: #E5E5E5;
