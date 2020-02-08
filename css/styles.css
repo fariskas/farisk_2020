@@ -483,7 +483,7 @@ img.loading {
 	}
 	.section-left {
 
-		width: calc(var(--grid-width) * 2);
+		width: calc(var(--grid-width) * 2 - 1px);
 		z-index: 2;
 		background-color: rgba(229, 229, 229, 0.9);
 		max-height: calc(100% - var(--site-gap) - var(--site-gap) + 2px);
@@ -524,6 +524,10 @@ img.loading {
 		width: 1px;
 		height: 100%;
 		background-color: #888888;
+	}
+	.work-description {
+	    height: 100%;
+	    overflow: auto;
 	}
 	.footer {
 		pointer-events: none;
