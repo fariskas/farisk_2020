@@ -60,9 +60,9 @@ var data_work = [
 					"description"	: "OKOK Services is an independent creative studio based between Amsterdam and Seoul, creating exploratory visual digital experiences.",
 					"url" 			: "http://okok.services/",
 					"cat"			: ["w", "pf", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "okok",
 					"media"			: ["0.mp4"],
-					"vimeo"			: "386014044"
+					"vimeo"			: "390138968"
 				},
 				{
 					"title" 		: null,
