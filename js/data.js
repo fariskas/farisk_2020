@@ -39,8 +39,8 @@ var data_cat =	[
 var data_work = [
 				{
 					"title" 		: "Amos Abel Yong",
-					"description"	: "Concept and development of an online portfolio with a content management system for Singapore-based photographer, Amos Abel Yong. ",
-					"url" 			: "http://ahmoo.se/",
+					"description"	: "Concept and development of an online portfolio with a content management system for Singapore-based photographer, Amos Abel Yong.<br><br>Coming Soon.",
+					"url" 			: null,
 					"cat"			: ["w", "pf", "d", "dv"],
 					"path"			: "amos",
 					"media"			: ["0.mp4"],
@@ -72,8 +72,8 @@ var data_work = [
 				},	
 				{
 					"title" 		: "Mun Jiwoo",
-					"description"	: "Mun Jiwoo is a South Korean photographer who bases her work off bla bla bla lorem ipsum dolor sit amet.",
-					"url" 			: "http://aminorthread.com/",
+					"description"	: "Mun Jiwoo is a South Korean photographer and writer.<br><br>This website linearly journals her wanders through life with the mouse cursor acting as a color picker tool that changes the background color of the website depending on the part of the photograph the mouse hovers on.<br><br>Coming Soon.",
+					"url" 			: null,
 					"cat"			: ["w", "pf", "d", "dv"],
 					"path"			: "jiwoo",
 					"media"			: ["0.mp4"],
