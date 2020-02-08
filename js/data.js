@@ -75,9 +75,9 @@ var data_work = [
 					"description"	: "Mun Jiwoo is a South Korean photographer who bases her work off bla bla bla lorem ipsum dolor sit amet.",
 					"url" 			: "http://aminorthread.com/",
 					"cat"			: ["w", "pf", "d", "dv"],
-					"path"			: "amt",
+					"path"			: "jiwoo",
 					"media"			: ["0.mp4"],
-					"vimeo"			: "386014044"
+					"vimeo"			: "390132204"
 				},
 				{
 					"title" 		: null,
@@ -177,7 +177,7 @@ var data_work = [
 				},
 				{
 					"title" 		: "Experimentations",
-					"description"	: "Various code based visual experimentations made with WebGL, GLSL, cables.gl<br><br>View more at <a href='https://instagram.com/faris.kassim' target='_blank'>@fariskassim",
+					"description"	: "Various code based visual experimentations made with WebGL, GLSL, cables.gl<br><br>View more at <a href='https://instagram.com/faris.kassim' target='_blank'>@faris.kassim",
 					"url" 			: null,
 					"cat"			: ["mg", "d", "dv"],
 					"path"			: "coma",
