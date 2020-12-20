@@ -1,3 +1,6 @@
+	// check for ios
+	var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+
 
 	var style = document.createElement('style');
 	style.type = 'text/css';
@@ -15,10 +18,6 @@
 		style.innerHTML = style_to_add;
 
 	document.getElementsByTagName('head')[0].appendChild(style);
-
-
-
-
 
 
 	for (var i = 0; i < data_work.length; i++) {
@@ -80,7 +79,7 @@
 
 
 	$('.reset-filter').click(function() {
-		$('body').attr('class', "")
+		$('body').attr('class', "show-menu")
 		$('.reset-filter, .filter-divider').removeClass('show')
 	})
 
@@ -108,6 +107,7 @@
 	$('.grid-with-work').click(function() {
 		$(this).addClass('active');
 		$('body').addClass('show-work');
+		$('body').removeClass('show-about')	
 
 		setTimeout(function(){ 
 			$('.work-description').scrollTop(0)
@@ -116,13 +116,18 @@
 		
 
 		var work_index = $(this).attr('data-index');
+
+
 		$('.overlay-container').append('\
+			<div class="overlay-bg"></div>\
 			<div class="overlay">\
-				<div class="overlay-bg"></div>\
-				<img class="loading" src="assets/icn/loading.svg">\
-				<div style="padding:70.28% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'+data_work[work_index].vimeo+'?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>\
+				<span class="loading">LOADING</span>\
+				<!--<img class="loading" src="assets/icn/loading.svg">-->\
 			</div>\
 		');
+
+		timed_video_append(data_work[work_index].vimeo)
+
 
 		// <video src="assets/works/'+data_work[work_index].path+'/0.mp4" controls autoplay loop playsinline>\
 
@@ -134,10 +139,31 @@
 	})
 
 	$('.overlay-container, .close-overlay').click(function() {
-		$('.overlay-container').fadeOut('fast', function() {
-			$('.overlay-container').empty();
+		$('.overlay-container').fadeOut('fast', function() {		
+		   setTimeout(function() {
+		   		$('.overlay-container').empty();
+		   }, 200);
 		});
 		$('.work-description, .close-overlay').fadeOut('fast');
 		$('.grid-with-work').removeClass('active');
 		$('body').removeClass('show-work');
 	})
+
+
+	function timed_video_append(vid_index){
+	   setTimeout(function() {
+		$('.overlay').append('\
+			<div style="padding:70.28% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'+vid_index+'?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>\
+		');
+	   }, 300);
+	};
+
+
+//////// custom scrollbars for non ios only
+var wrapper_all = document.querySelector(".wrapper");
+if (!iOS) {
+
+	new SimpleBar(wrapper_all);
+} else {
+	$('body').addClass('ios');
+}
